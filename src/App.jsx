@@ -7,6 +7,7 @@ import JoinForm from "./components/JoinForm.jsx";
 import LoginForm from "./components/LoginForm.jsx";
 import UpdateForm from "./components/UpdateForm.jsx";
 import Header from "./components/Header.jsx";
+import AnimationTest from "./components/test/AnimationTest.jsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/joinForm" element={<JoinForm/>}/>
                     <Route path="/loginForm" element={<LoginForm/>}/>
                     <Route path="/updateForm" element={<UpdateForm/>}/>
+                    <Route path="/animation" element={<AnimationTest/>}/>
                 </Routes>
             </Router>
         </div>
