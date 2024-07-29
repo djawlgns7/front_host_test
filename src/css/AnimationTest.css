@@ -17,3 +17,9 @@
     width: 200px; /* 원하는 너비 */
     height: auto; /* 높이는 비율에 맞게 자동 조정 */
 }
+
+.door {
+    width: 250px; /* 원하는 너비 */
+    height: auto; /* 높이는 비율에 맞게 자동 조정 */
+    z-index: 100;
+}

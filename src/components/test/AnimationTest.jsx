@@ -18,12 +18,34 @@ const AnimationTest = () => {
 
     useEffect(() => {
         setAngle(prev => {
+            // if (timer <= 32) {
+            //     if (timer >= 15) {
+            //         setDirection(-1);
+            //     }
+            //
+            //     return prev + direction * 4;
+            // } else {
+            //     return prev;
+            // }
+
+            if (timer === 0) {
+                return prev + 25;
+            } else if (timer === 32) {
+                return 0;
+            } else {
+                return prev;
+            }
+        })
+
+        setPositionX(prev => {
             if (timer <= 32) {
                 if (timer >= 15) {
-                    setDirection(-1);
+                    return prev - 4;
                 }
 
-                return prev + direction * 4;
+                return prev + 4;
+            } else if (timer <= 90) {
+                return prev + 3;
             } else {
                 return prev;
             }
@@ -43,6 +65,11 @@ const AnimationTest = () => {
 
     return (
         <div className="image-container">
+            <img src="/문_배경없.png"
+                 alt="img not found"
+                 style={{transform: `translate(-70px, 0)`}}
+                 className={"door"}
+            />
             <img
                 src="/roomie.png"
                 alt="img not found"
