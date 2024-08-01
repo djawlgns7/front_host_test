@@ -13,7 +13,7 @@
 .roomie {
     width: 150px; /* 원하는 너비 */
     height: auto; /* 높이는 비율에 맞게 자동 조정 */
-    translate: 0 40px;
+    translate: 0 -40px;
     z-index: 5;
 }
 
