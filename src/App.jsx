@@ -7,6 +7,7 @@ import LoginForm from "./components/LoginForm.jsx";
 import UpdateForm from "./components/UpdateForm.jsx";
 import Header from "./components/Header.jsx";
 import AnimationTest from "./components/test/AnimationTest.jsx";
+import WebCamTest from "./components/test/WebCamTest.jsx";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/loginForm" element={<LoginForm/>}/>
                     <Route path="/updateForm" element={<UpdateForm/>}/>
                     <Route path="/animation" element={<AnimationTest/>}/>
+                    <Route path="/camera" element={<WebCamTest/>}/>
                 </Routes>
             </Router>
         </div>
